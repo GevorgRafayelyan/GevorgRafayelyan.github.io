@@ -1,0 +1,632 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,500;0,600;0,700;1,400&family=Montserrat:wght@400;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    
+    font-size: 16px;
+    color: #fff;
+    background: #000;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.wrapper {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.container {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.monitor_container {
+    max-width: 100%;
+}
+
+.monitor {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    animation-name: monitor-anim;
+    animation-duration: 0.7s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+@keyframes monitor-anim {
+    0% {
+        top: -100px;
+        opacity: 0%;
+    }
+    50% {
+        
+    }
+    100% {
+        top: 0;
+        opacity: 100%;
+    }
+}
+
+.h1 {
+    max-width: 468px;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+    margin: 60px auto 30px;
+    color: #fff;
+    text-align: center;
+    
+}
+
+.header-text._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+
+.header-text {
+    transform: translate(0px, 80%);
+    opacity: 0;
+    transition: all 0.7s ease 0s;
+    color: #B7B7B7;
+    font-size: 24px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.btn_container {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border: 1px solid #fff;
+    border-radius: 100px;
+    margin: 50px auto;
+}
+
+.btn_container img{
+    position: relative;
+    border-radius: 100px;
+    margin: 20px 24px 20px 22px;
+    animation-name: btn-down;
+    animation-duration: 0.7s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes btn-down {
+    0% {
+        top: 0;
+    }
+    50% {
+        
+    }
+    100% {
+        top: 10px;
+    }
+}
+
+/* End of header*/
+/* End of header*/
+/* End of header*/
+
+
+
+.about {
+    margin: 50px auto 0;
+}
+
+.about_container {
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 550px){
+    .about_container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-right: 20px;
+    }
+
+    .header-text {
+        transform: translate(0px, 80%);
+        opacity: 0;
+        transition: all 0.7s ease 0s;
+        color: #B7B7B7;
+        font-size: 24px;
+        text-align: center;
+        margin: 0 20px;
+    }
+}
+
+.h2 {
+    font-size: 48px;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.about-text {
+    max-width: 680px;
+    margin-top: 16px;
+}
+
+.about-image_container {
+    max-width: 696px;
+}
+
+.about-info {
+    margin-left: 20px;
+}
+
+.about-image {
+    width: 100%;
+}
+
+
+/* End of Section 1*/
+/* End of Section 1*/
+/* End of Section 1*/
+
+
+.mydesktop {
+    margin: 100px auto;
+}
+
+.mydesktop_container {
+    position: relative;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mydesktop-img {
+    width: 100%;
+}
+
+.mydesktop-img-light {
+    position: absolute;
+    top: 10%;
+    left: 19%;
+    max-width: 867px;
+    width: 100%;
+    max-height: 600px;
+    opacity: 70%;
+    animation-name: light-anim;
+    animation-duration: 0.8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes light-anim {
+    0% {
+        opacity: 200%;
+    }
+    50% {
+        opacity: 100%;
+    }
+
+    55% {
+        opacity: 100%;
+    }
+
+    60% {
+        opacity: 100%;
+    }
+
+    65% {
+        opacity: 100%;
+    }
+
+    70% {
+        opacity: 100%;
+    }
+
+    80% {
+        opacity: 100%;
+    }
+
+    100% {
+        opacity: 70%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .mydesktop-img-light {
+        position: absolute;
+        top: 12%;
+        left: 19%;
+        max-height: 500px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .mydesktop-img-light {
+        position: absolute;
+        top: 14%;
+        left: 19%;
+        max-height: 480px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .mydesktop-img-light {
+        position: absolute;
+        top: 14%;
+        left: 19%;
+        max-height: 460px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .mydesktop-img-light {
+        position: absolute;
+        top: 14%;
+        left: 19%;
+        max-height: 440px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .mydesktop-img-light {
+        position: absolute;
+        top: 16%;
+        left: 19%;
+        max-height: 400px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .mydesktop-img-light {
+        position: absolute;
+        top: 16%;
+        left: 19%;
+        max-height: 370px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .mydesktop-img-light {
+        position: absolute;
+        top: 18%;
+        left: 19%;
+        max-height: 330px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .mydesktop-img-light {
+        position: absolute;
+        top: 20%;
+        left: 17%;
+        max-height: 270px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .mydesktop-img-light {
+        position: absolute;
+        top: 22%;
+        left: 17%;
+        max-height: 230px;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .mydesktop-img-light {
+        position: absolute;
+        top: 24%;
+        left: 17%;
+        max-height: 200px;
+    }
+}
+
+/* End of Section 2*/
+/* End of Section 2*/
+/* End of Section 2*/
+
+
+
+.design-thinking {
+    margin: 80px auto 0;
+}
+
+.design-thinking_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.design-thinking_info {
+    text-align: center;
+}
+
+.design-thinking_text {
+    margin-top: 16px;
+}
+
+.design-thinking-image_container {
+    max-width: 1200px;
+    margin: 40px auto 0;
+}
+
+.design-thinking_image {
+    width: 100%;
+}
+
+
+/* End of Section 3*/
+/* End of Section 3*/
+/* End of Section 3*/
+
+
+
+.figma {
+    text-align: center;
+    width: 100%;
+    margin: 100px auto 0;
+}
+
+.figma-blocks {
+    max-width: 1000px;
+    margin: 40px auto 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.figma-block1 {
+    transform: translate(0px, 40%);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+    max-width: 500px;
+    margin: 20px;
+}
+
+.figma-block2 {
+    transform: translate(0px, 80%);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+    max-width: 500px;
+    margin: 20px;
+}
+
+.figma-block2._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+
+.figma-block1._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+
+.autolayout, .component {
+    margin-bottom: 16px;
+    width: 100%;
+}
+
+
+
+/* End of Section 4*/
+/* End of Section 4*/
+/* End of Section 4*/
+
+
+
+.projects {
+    text-align: center;
+    width: 100%;
+    margin: 100px auto 0;
+}
+
+.projects_items {
+    margin: 40px 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.item1-container, .item2-container, .item3-container {
+    max-width: 380px;
+    width: 100%;
+    margin: 10px;
+}
+
+.item1 img, .item2 img, .item3 img {
+    width: 100%;
+}
+
+.item3 img:hover {
+    opacity: 60%;
+    transition: all 0.3s linear;
+}
+
+.item1 img:hover {
+    opacity: 60%;
+    transition: all 0.3s linear;
+}
+
+.item2 img:hover {
+    opacity: 60%;
+    transition: all 0.3s linear;
+}
+
+.button_container {
+    margin: 40px auto 0;
+}
+
+.button {
+    max-width: 267px;
+    height: 55px;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #fff;
+    padding: 18px 99px;
+}
+
+.button:hover {
+    background: rgb(32, 32, 32);
+    transition: all 0.3s linear;
+}
+
+
+
+/* End of Section 5*/
+/* End of Section 5*/
+/* End of Section 5*/
+
+
+
+.contacts {
+    position: relative;
+    text-align: center;
+    height: 400px;
+    width: 100%;
+    margin: 100px auto 0;
+}
+
+.contacts-block {
+    
+    display: flex;
+    max-width: 637px;
+    width: 100%;
+    justify-content: space-between;
+    margin: 50px auto;
+}
+
+@media screen and (max-width: 900px) {
+    .contacts-block {
+        display: flex;
+        flex-direction: column;
+        max-width: 637px;
+        width: 100%;
+        height: 300px;
+        justify-content: space-between;
+        margin: 50px 20px ;
+    }
+
+    .facebook {
+        margin-bottom: 20px;
+    }
+
+    .projects_items {
+        margin: 40px 20px 0;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item1-container, .item2-container, .item3-container {
+        max-width: 600px;
+        margin: 10px;
+    }
+
+    .item1, .item2, .item-container {
+        width: 100%;
+        
+    }
+
+    .item1 img, .item2 img, .item3 img {
+        width: 100%;
+    }
+
+    .figma-blocks {
+        max-width: 1000px;
+        margin: 40px auto 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+.contacts-block a {
+    color: #fff;
+    font-size: 24px;
+}
+
+.contacts-img {
+    max-width: 500px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.h3 {
+    font-size: 16px;
+    color: #B7B7B7;
+}
+
+.phone-block {
+    height: 63px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.mail-block {
+    height: 63px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.social-block {
+    height: 99px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    height: 64px;
+    justify-content: space-between;
+}
+
+.btn-up_container {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    right: 50px;
+    top: 100px;
+}
+
+.btn-up {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 100px;
+}
+
+.btn-up img {
+    transform: rotate(180deg);
+    position: relative;
+    margin: 20px 24px 20px 22px;
+    animation-name: btn-down;
+    animation-duration: 0.7s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
